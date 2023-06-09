@@ -1,0 +1,14 @@
+.tasks-container {
+    margin: 20px auto ;
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(86, 206, 100, 0.408);
+
+    &__link:hover {
+        cursor: pointer;
+        color: rgb(249, 85, 70)
+    }
+
+}

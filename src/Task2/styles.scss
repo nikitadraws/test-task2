@@ -1,0 +1,15 @@
+.flow-container {
+  margin: auto;
+  width: 800px;
+  height: 450px;
+
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+}
