@@ -20,7 +20,7 @@ export const CustomTable = ({ cols, items, pageSize }: CustomTableProps) => {
     : items;
 
   // вытаскиваем state если имеется и преобразуем строки для вывода в таблицу
-  const covertedRows = itemsSlice.map((row) => {
+  const convertedRows = itemsSlice.map((row) => {
     const { state, ...rest } = row;
     return (
       <div
@@ -47,8 +47,8 @@ export const CustomTable = ({ cols, items, pageSize }: CustomTableProps) => {
               return <div className="custom-table__header-cell">{name}</div>;
             })}
           </div>
-          {covertedRows.length ? (
-            covertedRows
+          {convertedRows.length ? (
+            convertedRows
           ) : (
             <div className="custom-table__no-data">Нет данных</div>
           )}
